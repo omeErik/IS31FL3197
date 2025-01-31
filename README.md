@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains an I2C driver for the [IS31FL3197 chip](https://www.lumissil.com/assets/pdf/core/IS31FL3197_DS.pdf). The chip can be found on the Arduino GIGA Display Shield and was developed and tested using OpenMV.
+This repository contains an I2C driver for the [IS31FL3197 chip](https://www.lumissil.com/assets/pdf/core/IS31FL3197_DS.pdf). The chip can for instance be found on the Arduino GIGA Display Shield. This driver was developed and tested using OpenMV on an Arduino Giga R1 Wifi with the shield attached.
 
 The IS31FL3197 can drive four LEDs:
 
