@@ -49,7 +49,7 @@ class IS31FL3197:
 
     MIT No Attribution
 
-    Copyright (c) 2025 Erik de Ruiijter, Eindhoven
+    Copyright (c) 2025 Erik de Ruijter, Eindhoven
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of this
     software and associated documentation files (the "Software"), to deal in the Software
