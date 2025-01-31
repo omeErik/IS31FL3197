@@ -68,6 +68,7 @@ class IS31FL3197:
     class _led:
         '''
         interface to indivisual leds
+        only to be instantiated class IS31FL3197 
         '''
         def __init__(self, chip, scope):
             self._chip = chip
@@ -114,6 +115,7 @@ class IS31FL3197:
     class _rgb:
         '''
         interface to colors
+        only to be instantiated class IS31FL3197 
         '''
         def __init__(self, chip, scope):
             self._chip = chip
@@ -157,6 +159,7 @@ class IS31FL3197:
     class _pattern:
         '''
         interface to patterns
+        only to be instantiated class IS31FL3197 
         '''
         def __init__(self, chip, scope):
             self._chip = chip
