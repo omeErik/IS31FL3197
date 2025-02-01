@@ -63,7 +63,18 @@ Intensity and color patterns can run in the deep sleep mode of the controlling M
 ### Initialization
 
 ```python
-is31 = IS31FL3197(80)  # I2C address for the Arduino GIGA Display Shield is 80
+import machine, time
+from machine import I2C
+from IS31FL3197 import IS31FL3197
+
+# some standard color schemes
+RED      = (255,   0,   0)
+GREEN    = (  0, 255,   0)
+BLUE     = (  0,   0, 255)
+WHITE    = (255, 255, 255)
+
+# initialise the chip
+is31 = IS31FL3197(80)  # I2C address for the chip on the Arduino GIGA Display Shield is 80 (0x50)
 ```
 
 ### Individual LED Interface (Red LED)
@@ -80,7 +91,7 @@ is31.r.off()            # Fully off
 ### Grouped LEDs in Color Interface
 
 ```python
-is31.rgb.color(RED)     # Set color (0..255, 0..255, 0..255)
+is31.rgb.color(WHITE)     # Set color (0..255, 0..255, 0..255)
 is31.rgb.pwm(1023)      # PWM: 0..4095
 is31.rgb.clb(1)         # Current Level Boost: 1..4
 is31.rgb.off()          # Turn off
