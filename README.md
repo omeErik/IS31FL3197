@@ -115,7 +115,7 @@ is31.pattern.config(
     cycles_3=1,
     multi_pulse_loops=1,        # Multi-pulse loops: 1..15 or 'endless' (maps to 0)
     pattern_loops=64,           # Pattern loops: 1..64 or 'endless' (maps to 0)
-    times16=True,               # Multiply pattern_loops (max 1024)
+    times16=True,               # Multiply pattern_loops (for a max of 16*64=1024)
     hold_time_selection='T4',   # Hold time selection: 'T4' or 'T2'
     hold_time_function=False,
     color_1=RED,
